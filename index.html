@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps Autocomplete</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="mian_co">
+    <div class="item_con">
+    <h1>Google Maps Autocomplete</h1>
+    <label for="location-input">Enter Location:</label>
+    <input type="text" id="location-input" placeholder="Enter a location">
+    <button id="panelMarker" onclick="findSolar('panel')">Find Solar Panels</button>
+    <div class="slider_con">
+        
+    </div>
+    <div id="solar_data"></div>
+    <div id="yourParentContainerId"></div>
+    </div>
+    <div class="map_con">
+    <div id="map"></div>
+    </div>
+</div>
+<script src="script.js" type="text/javascript"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?{KEY}&libraries=places,geometry&callback=initMap"></script>
+</body>
+</html>
